@@ -1,0 +1,108 @@
+input {
+	font-family: inherit;
+	font-size: inherit;
+}
+#msg {
+	flex-basis: 100%;
+	padding: 5px;
+	outline: none;
+	border: none;
+}
+.input-wrapper {
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 5px;
+}
+.msg-wrapper {
+	padding: 5px;
+	overflow: auto;
+	height: 100%;
+}
+.pinned-wrapper {
+	padding: 5px;
+	margin-bottom: 5px;
+}
+.info {
+	margin-top: 5px;
+	padding: 5px;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.token-input {
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+	text-align: right;
+}
+#footer {
+	margin: 5px 5px 0px 0px;
+	flex-direction: column;
+}
+.button {
+	background-color: white;
+	color: black;
+	transition-duration: 0.4s;
+	padding: 5px;
+	margin-right: 5px;
+	width: 70px;
+	text-align: center;
+	outline: none;
+	border: 1px solid dodgerblue;
+}
+.button:hover {
+	background-color: dodgerblue;
+}
+#msg-count-wrapper {
+	flex-basis: 100%;
+	align-items: center;
+}
+#count-wrapper {
+	color: lightgray;
+	margin-right: 5px;
+}
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
+.flex-col {
+	display: flex;
+	flex-direction: column;
+}
+#msg-input-wrapper {
+	flex-basis: 100%;
+}
+#amount-wrapper {
+	margin-left: 5px;
+	align-items: center;
+}
+#amount {
+	width: 60px;
+	border: none;
+	padding: 5px;
+}
+input::-webkit-input-placeholder{
+	color: lightgray;
+}
+input:-moz-placeholder{
+	color: lightgray;
+}
+a:link {
+	color: black;
+	text-decoration: underline;
+	text-decoration-color: dodgerblue
+}
+a:visited {
+	color: black;
+	text-decoration: underline;
+	text-decoration-color: dodgerblue
+}
+a:hover {
+	color: dodgerblue;
+	text-decoration: underline;
+	text-decoration-color: dodgerblue
+}
+a:active {
+	color: blue;
+	text-decoration: underline;
+	text-decoration-color: dodgerblue
+}
