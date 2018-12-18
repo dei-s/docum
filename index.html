@@ -21,7 +21,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+<link rel="shortcut icon" type="image/png" href="img/favicon.png">
 <link rel="stylesheet" href="css/lite.css">
 <link rel="stylesheet" href="css/mir-docum-lite.css">
 <title>MirDocum | Waves Blockchain</title>
@@ -445,9 +445,9 @@
 										<td>Fee</td>
 										<td>
 											<md-autocomplete md-input-name="sendFee" md-selected-item="send.autocomplete.selectedFee" md-search-text="send.autocomplete.searchText"
-												 md-items="item in send.autocomplete.querySearch(send.autocomplete.searchText)"
-												 md-item-text="item.amount.toString()" md-min-length="0" md-require-match="" md-no-cache="true"
-												 md-menu-class="popup-autocomplete" class="fee-autocomplete">
+												md-items="item in send.autocomplete.querySearch(send.autocomplete.searchText)"
+												md-item-text="item.amount.toString()" md-min-length="0" md-require-match="" md-no-cache="true"
+												md-menu-class="popup-autocomplete" class="fee-autocomplete">
 												<md-item-template>
 													<span md-highlight-text="send.autocomplete.searchText">{{item.displayText}}</span>
 												</md-item-template>
@@ -634,8 +634,8 @@
 
 					<div class="noDisp">
 						<div id="mir-dialog" waves-dialog ok-button-caption="CLOSE" cancel-button-visible="false">
-							<h2 class="sectionHeader">DOCUM</h2>
-							<p class="dialog-text">Please visit <a href="https://docum.dei.su" target="_blank">MirDocum</a> gateway.</p>
+							<h2 class="sectionHeader">МИР</h2>
+							<p class="dialog-text">Please visit <a href="https://mir.one" target="_blank">Mir</a> gateway.</p>
 							<p class="dialog-text">You can only use Mir gateway if you have Russia citizenship.</p>
 						</div>
 					</div>
@@ -1246,7 +1246,6 @@
 
 				<!-- COMMUNITY TAB -->
 				<div id="mBB-community" class="mBB-content" ng-switch-when="community" ng-controller="communityController as community">
-					<!-- Temporary -->
 					<h2 class="sectionHeader">LATEST MESSAGE TO ALIASE DIGITALECONOMY</h2>
 					<body>
 						<div id="app" class="flex-item">
