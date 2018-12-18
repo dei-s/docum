@@ -1246,31 +1246,48 @@
 
 				<!-- COMMUNITY TAB -->
 				<div id="mBB-community" class="mBB-content" ng-switch-when="community" ng-controller="communityController as community">
-					<h2 class="sectionHeader">LATEST MESSAGE TO ALIASE DIGITALECONOMY</h2>
-					<body>
-						<div id="app" class="flex-item">
-							<div class="msg-wrapper flex-item bordered" ref="msgWrapper">
-								<table id="msg-list">
-									<tr v-for="msg in messages">
-										<td>
-										{{ formatTime(msg.time)}}
-										</td>
-										<td>
-											<a :href="'https://wavesexplorer.com/tx/' + msg.id">{{ formatSender(msg.sender) }}</a>:
-										</td>
-										<td>
-											{{ msg.text }} ({{ (msg.amount / 100000000).toLocaleString('ru-ru', {maximumSignificantDigits: 20}) }} МИР)
-										</td>
-									</tr>
-								</table>
-							</div>
-
-							</div>
-							<div class="flex-row info bordered">
-							</div>
-						</div>
-					</body>
-
+					<p>DISCLAIMER: The Community tab will temporarily hold block information for testing purposes. After alpha phase this data  will be relocated inside the Preferences - Advanced area.</p>
+					<h2 class="sectionHeader">LATEST BLOCKS INFORMATION</h2>
+					<p class="centerIt">
+					<div id="latestBlocks" class="wavesTable wScroll" >
+						<table>
+							<thead>
+							<tr class="fade">
+								<td>HEIGHT</td>
+								<td>DATE</td>
+								<td>TRANSACTIONS</td>
+								<td>GENERATOR</td>
+							</tr>
+							</thead>
+							<tbody id="latestBlocksTable">
+							<tr class="fade">
+								<td>407452</td>
+								<td><i>incoming</i></td>
+								<td>{v:1,mt:3,of:3N98TXtsKPbgw6bL5eGKeuKFKkdxG3oJdwe,to:3N6wZiP9USQonRukfxAEFUftetNQHBPU26b,subj:"Строительство дома",price:100000,dt:3587347643,other:""}</td>
+								<td><i>unconfirmed</i></td>
+							</tr>
+							<tr class="fade">
+								<td>407441</td>
+								<td>2018-12-16 16:54:43</td>
+								<td>{v:1,mt:3,of:3N98TXtsKPbgw6bL5eGKeuKFKkdxG3oJdwe,to:3N6wZiP9USQonRukfxAEFUftetNQHBPU26b,subj:"Строительство дома",price:100000,dt:3587347643,other:""}</td>
+								<td>Ok</td>
+							</tr>
+							<tr class="fade">
+								<td>407351</td>
+								<td>2018-12-16 15:22:23</td>
+								<td>{v:1,mt:3,of:3N6wZiP9USQonRukfxAEFUftetNQHBPU26b,to:3N98TXtsKPbgw6bL5eGKeuKFKkdxG3oJdwe,subj:"Строительство дома",price:120000,dt:3587347643,other:""}</td>
+								<td>Ok</td>
+							</tr>
+							<tr class="fade">
+								<td>407335</td>
+								<td>2018-12-16 14:35:53</td>
+								<td>{v:1,mt:1,of:3N98TXtsKPbgw6bL5eGKeuKFKkdxG3oJdwe,to:3N6wZiP9USQonRukfxAEFUftetNQHBPU26b,subj:"Строительство дома",price:70000,dt:3587347643,other:""}</td>
+								<td>Ok</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+					</p>
 				</div>
 				<!-- /COMMUNITY TAB -->
 			</section>
