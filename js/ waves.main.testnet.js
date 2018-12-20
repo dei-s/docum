@@ -72,15 +72,15 @@ function AngularApplicationConfig($provide, $compileProvider, $validatorProvider
 
 	$provide.constant(networkConstants,
 		angular.extend(networkConstants, {
-			NETWORK_NAME: 'mainnet',
-			NETWORK_CODE: 'W'
+			NETWORK_NAME: 'testnet',
+			NETWORK_CODE: 'T'
 		}));
 	$provide.constant(applicationSettings,
 		angular.extend(applicationSettings, {
-			CLIENT_VERSION: '0.5.22',
-			NODE_ADDRESS: 'https://nodes.wavesplatform.com',
+			CLIENT_VERSION: '0.5.22a',
+			NODE_ADDRESS: 'https://pool.testnet.wavesnodes.com',
 			COINOMAT_ADDRESS: 'https://coinomat.com',
-			MATCHER_ADDRESS: 'https://matcher.wavesplatform.com',
+			MATCHER_ADDRESS: 'https://matcher.testnet.wavesnodes.com/matcher',
 			DATAFEED_ADDRESS: 'https://marketdata.wavesplatform.com'
 		}));
 
